@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="about-us col-md-12">
+    <div class="row m-0">
+        <div class="col-md-4  p-0">
+            <div class="about-content">
+                <h2>What is Impound Finders?</h2>
+                <p>Impound Finders is a global leader in 100% online car auctions featuring used, wholesale and repairable vehicles. We make it easy for Members to find, bid on, and win vehicles like classic cars, boats, repo cars, ATVs, exotics, motorcycles and more.</p>
+                <p>Impound Finders car auctions have something for everyone — used car buyers, dismantlers, dealers, body shops and individuals. We even have “No License Required” vehicles available to individuals in public auto auctions. We feature clean & salvage title cars, trucks, SUVs, motorcycles, heavy equipment & more in live online auto auctions every weekday.</p>
+            </div>
+        </div>
+        <div class="col-md-8 p-0">
+            <div class="about-info-section">
+                <div class="col-md-12 offset- md-1">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card p-3">
+                                <img src="~/images/impoundfinders.png" class="card-img-top" style="" alt="Car Owner VIN number">
+                                <div class="card-body ">
+                                    <h5 class="card-title mb-3 text-uppercase font-weight-bold">Impound Finders</h5>
+                                    <p class="card-text">
+                                        Our mission is to connect vehicle owners with facilities that may have impounded their vehicles. By simply searching using the VIN number, users can determine if their car is located at one of our partner facilities or any that have registered with us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-3">
+                                <img src="~/images/Impound-Tow.png" class="card-img-top" style="" alt="facilities and towing companies">
+                                <div class="card-body">
+                                    <h5 class="card-title">Business Owners</h5>
+                                    <p class="card-text">
+                                        We  also have the opportunity to register as facilities and towing companies, allowing them to receive alerts whenever a user searches for a vehicle that matches their records. Our service offers a streamlined solution for locating impounded vehicles efficiently.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <partial name="_SubscriptionPartial" model="Model.InputPlans" />
+    </div>
+</div>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript" src="~/customJs/subscriptionscript.js"></script>
+
+
+
